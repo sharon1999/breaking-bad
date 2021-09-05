@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../src/App.css'
+import CharacterGrid from "./Components/Characters/CharacterGrid";
 import Header from "./Components/Header";
 function App() {
   const [data, setData] = useState([]);
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <CharacterGrid data= {data} />
     </div>
   );
 }
